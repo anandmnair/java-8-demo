@@ -29,8 +29,8 @@ public class JavaTest {
 	@Test
 	public void findMinFromList() {
 		List<Integer> integers = IntStream.rangeClosed(1, 5).boxed().collect(Collectors.toList());
-		Integer max = integers.stream().map(e->e).min(Integer::compareTo).get();
-		assertThat(1, is(max));
+		Integer min = integers.stream().map(e->e).min(Integer::compareTo).get();
+		assertThat(1, is(min));
 	}
 
 }
